@@ -304,8 +304,9 @@ p {
     text-align: right;
 }
 
+/* Corrección para botón "Ver Detalles" en móvil */
 button.btn-text, a.btn-text {
-    background: none;
+    background: transparent;
     border: none;
     border-bottom: 1px solid var(--text-color);
     cursor: pointer;
@@ -316,6 +317,20 @@ button.btn-text, a.btn-text {
     padding: 0 0 2px 0;
     margin-top: 15px;
     display: inline-block;
+    
+    /* ESTAS SON LAS LÍNEAS NUEVAS IMPORTANTES: */
+    color: var(--text-color) !important; /* Fuerza el negro suave */
+    -webkit-text-fill-color: var(--text-color); /* Asegura color en iOS */
+    -webkit-appearance: none;   /* Elimina estilos nativos de botón móvil */
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent; /* Elimina el parpadeo azul al pulsar */
+}
+
+button.btn-text:hover, a.btn-text:hover {
+    color: var(--accent-color) !important; /* Beige al pasar el ratón */
+    border-bottom-color: var(--accent-color);
+    -webkit-text-fill-color: var(--accent-color);
 }
 
 /* --- FOOTER (CORREGIDO) --- */
