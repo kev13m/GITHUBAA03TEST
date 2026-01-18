@@ -1,7 +1,7 @@
 /* --- VARIABLES & RESET --- */
 :root {
     --bg-color: #F9F9F9;        /* Blanco/Ivory */
-    --bg-secondary: #F2F0EB;    /* Beige muy suave */
+    --bg-secondary: #F2F0EB;    /* Beige muy suave/Rosado */
     --text-color: #1A1A1A;      /* Negro Suave */
     --text-light: #555555;      /* Gris Oscuro */
     --accent-color: #C4B098;    /* Beige Arena */
@@ -67,6 +67,7 @@ p {
 
 .text-center { text-align: center; }
 
+/* Fondo Beige/Rosa para Servicios y Booking */
 .bg-beige { background-color: var(--bg-secondary); }
 
 /* --- BOTONES --- */
@@ -158,7 +159,7 @@ p {
     justify-content: center;
     text-align: center;
     position: relative;
-    background: url('https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1470&auto=format&fit=crop') no-repeat center center/cover;
 }
 
 .hero-overlay {
@@ -246,7 +247,7 @@ p {
     color: var(--text-color);
 }
 
-/* --- ESTILOS PARA EL DESPLEGABLE (DETAILS) --- */
+/* --- DESPLEGABLES --- */
 .details-container {
     max-height: 0;
     overflow: hidden;
@@ -304,7 +305,7 @@ p {
     text-align: right;
 }
 
-/* Corrección para botón "Ver Detalles" en móvil */
+/* Botones Ver Detalles (Mobile Fix) */
 button.btn-text, a.btn-text {
     background: transparent;
     border: none;
@@ -332,7 +333,7 @@ button.btn-text:hover, a.btn-text:hover {
     -webkit-text-fill-color: var(--accent-color);
 }
 
-/* --- EVENTOS ESPECIALES (SECCIÓN) --- */
+/* --- EVENTOS ESPECIALES --- */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -375,7 +376,7 @@ button.btn-text:hover, a.btn-text:hover {
     margin: 0 auto;
 }
 
-/* --- FOOTER (CORREGIDO) --- */
+/* --- FOOTER --- */
 footer {
     background-color: #111;
     color: #fff;
@@ -383,7 +384,7 @@ footer {
     width: 100%;
     position: relative;
     clear: both;
-    display: block; /* Asegura bloque */
+    display: block; 
 }
 
 footer .container {

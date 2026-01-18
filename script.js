@@ -10,6 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // NUEVO: Cerrar menú al hacer clic en un enlace
+    const menuLinks = document.querySelectorAll('.nav-links li a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+
     // 2. Efecto de Scroll en Navbar
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
@@ -40,12 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => observer.observe(el));
 });
 
-// 4. NUEVA Función Toggle Universal (Funciona para ambos botones)
+// 4. Función Toggle Universal
 function toggleService(detailsId, btnId) {
     const details = document.getElementById(detailsId);
     const btn = document.getElementById(btnId);
     
-    // Si no existen, salimos para evitar errores
     if (!details || !btn) return;
 
     if (details.classList.contains('open')) {
