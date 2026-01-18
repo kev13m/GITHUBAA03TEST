@@ -422,7 +422,7 @@ footer .container {
     line-height: 1.8;
 }
 
-/* Enlaces del footer (Maps, Whatsapp) */
+/* Enlaces del footer */
 .footer-col a, .text-link {
     color: #aaa;
     transition: color 0.3s ease;
@@ -451,7 +451,7 @@ footer .container {
 }
 
 .socials a:hover i {
-    color: var(--accent-color); /* Beige al pasar ratón */
+    color: var(--accent-color);
 }
 
 .copyright {

@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     
+    // 0. FORZAR SCROLL AL INICIO (Solución al problema de carga)
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     // 1. Navegación Móvil
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
