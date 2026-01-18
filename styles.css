@@ -422,6 +422,12 @@ footer .container {
     line-height: 1.8;
 }
 
+/* Efecto hover para enlaces del footer */
+.footer-col a:hover {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
 .socials {
     margin-top: 15px;
 }
