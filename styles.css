@@ -422,26 +422,36 @@ footer .container {
     line-height: 1.8;
 }
 
-/* Efecto hover para enlaces del footer */
-.footer-col a:hover {
-    color: var(--accent-color);
+/* Enlaces del footer (Maps, Whatsapp) */
+.footer-col a, .text-link {
+    color: #aaa;
     transition: color 0.3s ease;
 }
 
+.footer-col a:hover, .text-link:hover {
+    color: var(--accent-color);
+}
+
+/* Redes Sociales */
 .socials {
     margin-top: 15px;
 }
 
-.socials i {
-    font-size: 1.2rem;
+.socials a {
+    text-decoration: none;
     margin-right: 15px;
+    display: inline-block;
+}
+
+.socials i {
+    font-size: 1.3rem;
     color: #fff;
     transition: color 0.3s;
     cursor: pointer;
 }
 
-.socials i:hover {
-    color: var(--accent-color);
+.socials a:hover i {
+    color: var(--accent-color); /* Beige al pasar ratón */
 }
 
 .copyright {

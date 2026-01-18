@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // NUEVO: Cerrar menú al hacer clic en un enlace
+    // Cerrar menú al hacer clic en un enlace
     const menuLinks = document.querySelectorAll('.nav-links li a');
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
